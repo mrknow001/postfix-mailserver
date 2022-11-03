@@ -3,6 +3,7 @@
 # 开启postfix日志记录
 sed -i '/imklog/s/^/#/' /etc/rsyslog.conf
 sed -i 's/\/var\/log\/mail/\/var\/log\/postfix\/mail/' /etc/rsyslog.d/50-default.conf
+kill -9 `cat /var/run/rsyslogd.pid`
 /usr/sbin/rsyslogd
 
 # 配置/etc/postfix/main.cf文件
