@@ -32,6 +32,7 @@ start.sh文件192行修改title(可不改)，193修改域名
 ```
 
 如果开启TLS gophish可发邮件，foxmail无法发送
+
 如果开启SSL foxmail可发邮件，gophish无法使用
 
 配置完后重启postfix
