@@ -190,7 +190,7 @@ echo "$result" > $save_p$save_f
 echo "write done..."
 
 sed -i 's/^smtpd_banner = .*/smtpd_banner = Welcome to mail system!(mail.test.com.cn)/' /etc/postfix/main.cf
-postconf -e "myhostname = sctei.com.cn"
+postconf -e "myhostname = test.com"
 
 service postfix restart
 service dovecot restart
