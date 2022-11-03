@@ -38,3 +38,23 @@ start.sh文件192行修改title(可不改)，193修改域名
 配置完后重启postfix
 
 sudo service postfix restart
+
+
+生成文件说明：
+./mail/logs/postfix/mail.log
+# postfix日志
+
+./mail/logs/postfix/syslog
+# docker系统日志
+
+./mail/logs/dovecot/dovecot.log
+# dovecot日志
+
+./mail/data/*
+# postfix队列文件
+
+./mysql/conf/*
+# mysql配置
+
+./mysql/data/*
+# mysql数据
