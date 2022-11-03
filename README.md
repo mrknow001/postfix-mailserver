@@ -1,9 +1,12 @@
 # postfix-mailserver
 一键部署邮件服务器(postfix+dovecot)
 
-1、先通过cert.sh生成证书(脚本自动复制到当前目录，不要移动)
+1、修改域名
+start.sh文件192行修改title(可不改)，193修改域名
 
-2、启动docker
+2、先通过cert.sh生成证书(脚本自动复制到当前目录，不要移动)
+
+3、启动docker
 
 `docker-compose up -d`
 
