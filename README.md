@@ -42,19 +42,19 @@ sudo service postfix restart
 
 生成文件说明：
 ./mail/logs/postfix/mail.log
-# postfix日志
+\# postfix日志
 
 ./mail/logs/postfix/syslog
-# docker系统日志
+\# docker系统日志
 
 ./mail/logs/dovecot/dovecot.log
-# dovecot日志
+\# dovecot日志
 
 ./mail/data/*
-# postfix队列文件
+\# postfix队列文件
 
 ./mysql/conf/*
-# mysql配置
+\# mysql配置
 
 ./mysql/data/*
-# mysql数据
+\# mysql数据
