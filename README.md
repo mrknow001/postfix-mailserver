@@ -55,3 +55,5 @@ sudo service postfix restart
 ./mysql/data/*
 # mysql数据
 ```
+[!image]https://github.com/mrknow001/postfix-mailserver/blob/main/images/current-dir.png
+[!image]https://github.com/mrknow001/postfix-mailserver/blob/main/images/logs-dir.png
