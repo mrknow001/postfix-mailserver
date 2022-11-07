@@ -13,7 +13,7 @@ start.sh文件192行修改title(可不改)，193修改域名
 
 3、修改端口
 
-目前是使用的[22465(smtp+ssl)、22587(smtp+tsl)](默认ssl)、22993(imap)、22995(pop3)
+编辑docker-compose.yml，目前是使用的[22465(smtp+ssl)、22587(smtp+tsl)](默认ssl)、22993(imap)、22995(pop3)、33333(mysql)
 
 
 4、启动docker
@@ -21,6 +21,15 @@ start.sh文件192行修改title(可不改)，193修改域名
 `docker-compose up -d`
 
 需要注意的是，根据客户端不同，需要改下配置使用TSL还是SSL
+
+
+5、连接mysql创建用户
+```
+# 创建域名
+insert into virtual_domains values(1,'域名');
+# 创建用户
+insert into virtual_users values(1,1,md5('密码'),'账号');
+```
 ### 打开加密端口(smtp +SSL:465)
 
 ```
