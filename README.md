@@ -6,7 +6,10 @@ start.sh文件192行修改title(可不改)，193修改域名
 
 2、先通过cert.sh生成证书(脚本自动复制到当前目录，不要移动)
 
-3、启动docker
+3、修改端口
+目前是使用的[22465(smtp+ssl)、22587(smtp+tsl)](默认ssl)、22993(imap)、22995(pop3)
+
+4、启动docker
 
 `docker-compose up -d`
 
