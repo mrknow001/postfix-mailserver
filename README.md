@@ -27,6 +27,7 @@ start.sh文件192行修改title(可不改)，193修改域名
 ```
 # 连接mysql
 mysql -h[dockerip] -uroot -pAsd123456Asd
+或者mysql -h 127.0.0.1:3333 -uroot -pAsd123456Asd
 # 创建域名
 insert into virtual_domains values(1,'域名');
 # 创建用户
