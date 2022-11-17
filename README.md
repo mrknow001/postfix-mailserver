@@ -1,6 +1,5 @@
 # postfix-mailserver
-一键部署邮件服务器(postfix+dovecot)
-
+启动流程如下
 1、修改域名
 
 start.sh文件192行修改title(可不改)，193修改域名
@@ -25,6 +24,7 @@ start.sh文件192行修改title(可不改)，193修改域名
 
 5、连接mysql创建用户
 ```
+mysql -h[dockerip] -uroot -pAsd123456Asd
 # 创建域名
 insert into virtual_domains values(1,'域名');
 # 创建用户
