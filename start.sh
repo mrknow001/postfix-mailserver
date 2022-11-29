@@ -15,7 +15,7 @@ chmod 777 /var/log/postfix
 chmod 777 /var/log/dovecot
 
 # 配置/etc/postfix/main.cf文件
-sed -i 's/^myhostname.*/myhostname = sctei.com.cn/' /etc/postfix/main.cf
+sed -i 's/^myhostname.*/myhostname = test.com.cn/' /etc/postfix/main.cf
 sed -i 's/^#myorigin.*/myorigin = $myhostname/' /etc/postfix/main.cf
 sed -i 's/^mydestination.*/mydestination = localhost/' /etc/postfix/main.cf
 # 删除配置
